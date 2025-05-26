@@ -43,9 +43,7 @@ const App = () => {
     fakeDataFetch();
   }, []);
 
-  return isLoading ? (
-    <VideoPreloader />
-  ) : (
+  return (
     <BrowserRouter>
       <GlobalStateProvider>
         <Navbar />
